@@ -1,0 +1,54 @@
+
+table.dataTable tbody th, table.dataTable tbody td {
+	padding: .8% 1% !important;
+
+}
+
+.dtBasicExample, table
+{
+	width: 100% !important;
+}
+
+
+
+
+/*RWD added to avoid a problem with too big and blank cells*/
+
+@media only screen and (min-width: 1180px) {
+  table tr td:nth-child(2),table tr td:nth-child(3)
+  {
+  	
+  	width:30% !important;
+  }
+  table tr td
+  {
+  	text-align: center;
+  	width:10% !important;
+  }
+
+}
+
+/*RWD added, to avoid moving cursor for such a long distance, 
+I have put Search, and pagination button much closer to each other, changes after 2k exceed */
+@media only screen and (min-width: 2048px) {
+	
+  #dtBasicExample_filter
+  {
+    float:left !important;
+    
+    margin-left:57.5%;
+    
+
+  }
+
+    #dtBasicExample_length
+  {
+    float:left !important;
+    
+    margin-left:15%;
+    
+
+  }
+
+}
+
